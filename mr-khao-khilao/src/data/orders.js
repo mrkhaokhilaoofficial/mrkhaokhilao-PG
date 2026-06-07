@@ -1,0 +1,70 @@
+export const recentOrders = [
+  {
+    id: '#MKK-2401',
+    customer: 'Aman Verma',
+    avatar: 'https://randomuser.me/api/portraits/men/41.jpg',
+    items: ['Chaap Biryani', 'Paneer Tikka'],
+    amount: 398,
+    status: 'Delivered',
+    time: '2 mins ago',
+    address: 'Civil Lines, Gondia',
+  },
+  {
+    id: '#MKK-2402',
+    customer: 'Priya Meshram',
+    avatar: 'https://randomuser.me/api/portraits/women/23.jpg',
+    items: ['Saoji Chaap Roll', 'Makhani Momos'],
+    amount: 278,
+    status: 'Out for Delivery',
+    time: '8 mins ago',
+    address: 'Station Road, Gondia',
+  },
+  {
+    id: '#MKK-2403',
+    customer: 'Rohit Kapse',
+    avatar: 'https://randomuser.me/api/portraits/men/19.jpg',
+    items: ['Chaap Biryani'],
+    amount: 219,
+    status: 'Cooking',
+    time: '15 mins ago',
+    address: 'Tirora Road, Gondia',
+  },
+  {
+    id: '#MKK-2404',
+    customer: 'Sunita Bawne',
+    avatar: 'https://randomuser.me/api/portraits/women/55.jpg',
+    items: ['Paneer Tikka', 'Masala Roll', 'Fried Momos'],
+    amount: 437,
+    status: 'Preparing',
+    time: '22 mins ago',
+    address: 'Brahmapuri Layout, Gondia',
+  },
+  {
+    id: '#MKK-2405',
+    customer: 'Vikram Naik',
+    avatar: 'https://randomuser.me/api/portraits/men/68.jpg',
+    items: ['Butter Chaap Masala', 'Veg Biryani'],
+    amount: 358,
+    status: 'Order Received',
+    time: '30 mins ago',
+    address: 'Amgaon Road, Gondia',
+  },
+]
+
+export const orderTrackingSteps = [
+  { id: 1, label: 'Order Received', icon: '📋', time: '12:30 PM', completed: true },
+  { id: 2, label: 'Preparing', icon: '👨‍🍳', time: '12:32 PM', completed: true },
+  { id: 3, label: 'Cooking', icon: '🔥', time: '12:38 PM', completed: true },
+  { id: 4, label: 'Packed', icon: '📦', time: '12:50 PM', completed: false },
+  { id: 5, label: 'Out for Delivery', icon: '🛵', time: '1:00 PM', completed: false },
+  { id: 6, label: 'Delivered', icon: '✅', time: '1:20 PM', completed: false },
+]
+
+export const statusColors = {
+  'Delivered': '#22C55E',
+  'Out for Delivery': '#FF7A00',
+  'Cooking': '#FFA726',
+  'Preparing': '#FFD700',
+  'Order Received': '#B3B3B3',
+  'Cancelled': '#EF4444',
+}
