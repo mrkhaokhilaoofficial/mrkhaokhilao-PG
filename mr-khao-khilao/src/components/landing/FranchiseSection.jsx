@@ -1,5 +1,6 @@
 import { useRef, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import gsap from 'gsap'
 import { FaFire, FaHandshake, FaChartLine, FaStore, FaMapMarkerAlt } from 'react-icons/fa'
 import { HiArrowRight } from 'react-icons/hi'
@@ -80,8 +81,8 @@ const FranchiseSection = () => {
     <section
       id="franchise"
       ref={sectionRef}
-      className="relative py-24 md:py-32 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #0D0D0D 0%, #130500 40%, #1a0a00 60%, #0D0D0D 100%)' }}
+      className="relative pt-4 pb-12 md:pt-4 md:pb-16 overflow-hidden"
+      style={{ background: 'linear-gradient(160deg, #0A0502 0%, #130500 40%, #1a0a00 60%, #0A0502 100%)' }}
     >
       {/* Main ambient glow */}
       <div className="franchise-ambient absolute inset-0 opacity-20 pointer-events-none"
@@ -153,8 +154,8 @@ const FranchiseSection = () => {
           className="text-center"
         >
           {/* Tag */}
-          <motion.div variants={fadeUp} className="mb-6">
-            <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-semibold tracking-wider uppercase"
+          <motion.div variants={fadeUp} className="mb-3">
+            <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase"
               style={{ background: 'rgba(255,122,0,0.1)', border: '1px solid rgba(255,122,0,0.25)', color: '#FF7A00' }}
             >
               <FaHandshake /> Franchise Opportunity
@@ -164,36 +165,35 @@ const FranchiseSection = () => {
           {/* Headline */}
           <motion.h2
             variants={fadeUp}
-            className="font-poppins font-extrabold text-4xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight"
+            className="font-poppins font-extrabold text-3xl md:text-5xl lg:text-5xl text-white mb-3 leading-tight"
           >
             Become A{' '}
-            <span className="text-gradient-orange fire-text">Franchise</span>
-            <br />Partner
+            <span className="text-gradient-orange fire-text">Franchise</span> Partner
           </motion.h2>
 
           {/* Subheading */}
-          <motion.p variants={fadeUp} className="text-lg md:text-xl max-w-2xl mx-auto mb-12 font-inter" style={{ color: '#B3B3B3' }}>
-            Join the <span className="font-semibold" style={{ color: '#FF7A00' }}>fastest growing food brand</span> in Vidarbha.
+          <motion.p variants={fadeUp} className="text-sm md:text-base max-w-xl mx-auto mb-5 font-inter" style={{ color: '#A69F9B' }}>
+            Join the <span className="font-semibold" style={{ color: '#D94B00' }}>fastest growing food brand</span> in Vidarbha.
             Build your business backed by a proven model and a passionate team.
           </motion.p>
 
           {/* Benefit cards */}
           <motion.div
             variants={staggerContainer}
-            className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-14 max-w-4xl mx-auto"
+            className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6 max-w-4xl mx-auto"
           >
             {benefits.map((b, i) => (
               <motion.div
                 key={i}
                 variants={fadeUp}
-                whileHover={{ scale: 1.05, y: -6 }}
+                whileHover={{ scale: 1.03, y: -4 }}
                 transition={{ type: 'spring', stiffness: 300 }}
-                className="rounded-2xl p-5 text-left group cursor-default"
+                className="rounded-2xl p-4 text-left group cursor-default"
                 style={{
-                  background: 'rgba(26,26,26,0.7)',
+                  background: 'rgba(20,14,11,0.7)',
                   border: `1px solid ${b.color}25`,
                   backdropFilter: 'blur(8px)',
-                  boxShadow: `0 4px 20px rgba(0,0,0,0.3)`,
+                  boxShadow: `0 4px 20px rgba(0,0,0,0.4)`,
                   transition: 'border-color 0.3s, box-shadow 0.3s',
                 }}
                 onMouseEnter={e => {
@@ -202,41 +202,36 @@ const FranchiseSection = () => {
                 }}
                 onMouseLeave={e => {
                   e.currentTarget.style.borderColor = `${b.color}25`
-                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.3)'
+                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.4)'
                 }}
               >
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-3"
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-2.5"
                   style={{ background: `${b.color}15`, color: b.color, border: `1px solid ${b.color}30` }}
                 >
                   {b.icon}
                 </div>
-                <h4 className="font-poppins font-bold text-white text-sm mb-1">{b.title}</h4>
-                <p className="text-xs leading-relaxed" style={{ color: '#B3B3B3' }}>{b.desc}</p>
+                <h4 className="font-poppins font-bold text-white text-xs mb-0.5">{b.title}</h4>
+                <p className="text-[11px] leading-relaxed" style={{ color: '#A69F9B' }}>{b.desc}</p>
               </motion.div>
             ))}
           </motion.div>
 
           {/* CTA */}
           <motion.div variants={fadeUp}>
-            <motion.a
-              href="mailto:franchise@mrkhaokhilao.com"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.97 }}
-              className="inline-flex items-center gap-3 px-10 py-5 font-poppins font-bold text-lg text-white rounded-2xl"
+            <Link
+              to="/franchise/apply"
+              className="inline-flex items-center gap-3 px-8 py-3.5 font-poppins font-bold text-sm md:text-base text-white rounded-xl cursor-pointer hover:brightness-110 transition-all"
               style={{
-                background: 'linear-gradient(135deg, #FF7A00, #FFA726)',
-                boxShadow: '0 0 30px rgba(255,122,0,0.4)',
-                transition: 'box-shadow 0.3s',
+                background: 'linear-gradient(135deg, #D94B00, #E05300)',
+                boxShadow: '0 0 12px rgba(217,75,0,0.15)',
               }}
-              onMouseEnter={e => e.currentTarget.style.boxShadow = '0 0 50px rgba(255,122,0,0.65)'}
-              onMouseLeave={e => e.currentTarget.style.boxShadow = '0 0 30px rgba(255,122,0,0.4)'}
             >
-              <FaFire className="text-xl" />
+              <FaFire className="text-base" />
               Apply Now
-              <HiArrowRight className="text-xl" />
-            </motion.a>
-            <p className="text-sm mt-4" style={{ color: '#B3B3B3' }}>
-              📧 franchise@mrkhaokhilao.com · Reply within 24 hours
+              <HiArrowRight className="text-base" />
+            </Link>
+            <p className="text-[11px] mt-2.5" style={{ color: '#A69F9B' }}>
+              📧 franchise@mrkhaokhilao.com · Forms reviewed within 24 hours
             </p>
           </motion.div>
         </motion.div>

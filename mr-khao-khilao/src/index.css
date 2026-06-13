@@ -14,7 +14,7 @@
   }
 
   body {
-    background-color: #0D0D0D;
+    background-color: #0A0502;
     color: #FFFFFF;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
@@ -32,48 +32,48 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #161616;
+    background: #0F0906;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #FF7A00;
+    background: #D94B00;
     border-radius: 3px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #FFA726;
+    background: #E05300;
   }
 
   ::selection {
-    background: rgba(255, 122, 0, 0.3);
+    background: rgba(217, 75, 0, 0.25);
     color: #FFFFFF;
   }
 }
 
 @layer utilities {
   .text-gradient-orange {
-    background: linear-gradient(135deg, #FF7A00, #FFA726, #FFD700);
+    background: linear-gradient(135deg, #D94B00, #E05300, #E5B13C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .glass {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(20, 14, 11, 0.55);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.04);
   }
 
   .glass-dark {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(10, 5, 2, 0.8);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.03);
   }
 
   .orange-glow {
-    box-shadow: 0 0 20px rgba(255, 122, 0, 0.4);
+    box-shadow: 0 0 8px rgba(217, 75, 0, 0.12);
   }
 
   .card-hover {
@@ -82,11 +82,11 @@
 
   .card-hover:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 32px rgba(255, 122, 0, 0.25);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45), 0 2px 8px rgba(217, 75, 0, 0.08);
   }
 
   .fire-text {
-    text-shadow: 0 0 10px rgba(255, 122, 0, 0.8), 0 0 30px rgba(255, 122, 0, 0.4);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6), 0 0 10px rgba(217, 75, 0, 0.25);
   }
 
   .hide-scrollbar {
@@ -146,7 +146,7 @@
 
 /* Timeline glow */
 .timeline-active {
-  filter: drop-shadow(0 0 8px rgba(255, 122, 0, 0.8));
+  filter: drop-shadow(0 0 3px rgba(217, 75, 0, 0.25));
 }
 
 /* Map placeholder */

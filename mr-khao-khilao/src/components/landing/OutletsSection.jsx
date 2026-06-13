@@ -147,7 +147,7 @@ const OutletsSection = () => {
   const upcomingBranches = branches.filter(b => !b.isCurrent)
 
   return (
-    <section id="outlets" className="py-16 md:py-24 bg-bg-secondary relative overflow-hidden">
+    <section id="outlets" className="pt-16 pb-4 md:pt-24 md:pb-4 bg-bg-secondary relative overflow-hidden">
       {/* Ambient */}
       <div className="absolute inset-0 pointer-events-none opacity-30"
         style={{ background: 'radial-gradient(ellipse 60% 40% at 20% 50%, rgba(255,122,0,0.06), transparent)' }}

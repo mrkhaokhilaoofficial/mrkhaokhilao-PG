@@ -1,11 +1,15 @@
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { FaStar, FaFire, FaShoppingCart } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import { signatureDishes } from '../../data/menuItems'
+import { menuItems } from '../../data/menuItems'
 import SectionTitle from '../ui/SectionTitle'
 import { staggerContainer, fadeUp } from '../../animations/variants'
 import { useCart } from '../../context/CartContext'
 import Button from '../ui/Button'
+
+const dishesToDisplay = menuItems.slice(0, 5)
+const bgImages = dishesToDisplay.map(d => d.image)
 
 const DishCard = ({ dish, index }) => {
   const { addToCart } = useCart()
@@ -17,7 +21,7 @@ const DishCard = ({ dish, index }) => {
       transition={{ type: 'spring', stiffness: 300, damping: 20 }}
       className="group relative bg-bg-card border border-white/5 rounded-2xl overflow-hidden cursor-pointer"
       style={{ transition: 'box-shadow 0.3s ease' }}
-      onMouseEnter={e => e.currentTarget.style.boxShadow = '0 8px 40px rgba(255, 122, 0, 0.3)'}
+      onMouseEnter={e => e.currentTarget.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.45), 0 2px 8px rgba(217, 75, 0, 0.08)'}
       onMouseLeave={e => e.currentTarget.style.boxShadow = ''}
     >
       {/* Image */}
@@ -91,7 +95,7 @@ const DishCard = ({ dish, index }) => {
           </div>
           <motion.button
             whileTap={{ scale: 0.9 }}
-            onClick={() => addToCart(dish)}
+            onClick={(e) => { e.stopPropagation(); addToCart(dish); }}
             className="flex items-center gap-2 px-4 py-2 bg-orange-primary/10 border border-orange-primary/30 text-orange-primary rounded-xl text-sm font-semibold hover:bg-orange-primary hover:text-white transition-all duration-200"
           >
             <FaShoppingCart className="text-xs" />
@@ -104,13 +108,35 @@ const DishCard = ({ dish, index }) => {
 }
 
 const SignatureDishes = () => {
+  const [currentBg, setCurrentBg] = useState(0)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentBg(prev => (prev + 1) % bgImages.length)
+    }, 5000)
+    return () => clearInterval(timer)
+  }, [])
+
   return (
-    <section id="menu" className="py-16 md:py-24 bg-bg-secondary relative">
-      <div className="absolute inset-0 opacity-20"
-        style={{
-          background: 'radial-gradient(ellipse 60% 40% at 80% 50%, rgba(255,122,0,0.08), transparent)',
-        }}
-      />
+    <section id="menu" className="py-16 md:py-24 relative overflow-hidden bg-bg-secondary">
+      {/* Faded Background Slideshow of dishes */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        {bgImages.map((src, idx) => (
+          <motion.div
+            key={idx}
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage: `url(${src})`,
+              filter: 'blur(8px)',
+            }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: idx === currentBg ? 0.35 : 0 }}
+            transition={{ duration: 2.0, ease: 'easeInOut' }}
+          />
+        ))}
+        {/* Dark overlay for contrast */}
+        <div className="absolute inset-0 bg-gradient-to-b from-bg-primary via-black/85 to-bg-primary pointer-events-none" />
+      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionTitle
@@ -125,9 +151,9 @@ const SignatureDishes = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-80px' }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mt-12"
         >
-          {signatureDishes.map((dish, index) => (
+          {dishesToDisplay.map((dish, index) => (
             <DishCard key={dish.id} dish={dish} index={index} />
           ))}
         </motion.div>

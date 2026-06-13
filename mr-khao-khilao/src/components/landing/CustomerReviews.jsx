@@ -2,8 +2,10 @@ import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FaStar, FaQuoteLeft, FaCheckCircle } from 'react-icons/fa'
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi'
+import { Link } from 'react-router-dom'
 import { customerReviews } from '../../data/reviews'
 import SectionTitle from '../ui/SectionTitle'
+import Button from '../ui/Button'
 
 const InitialAvatar = ({ initials, color }) => (
   <div
@@ -160,6 +162,15 @@ const CustomerReviews = () => {
             >
               <HiChevronRight size={20} />
             </button>
+          </div>
+
+          {/* Write a Review Button */}
+          <div className="flex justify-center mt-8">
+            <Link to="/reviews/new">
+              <Button variant="primary" size="md">
+                Write a Review ✍️
+              </Button>
+            </Link>
           </div>
         </div>
 
