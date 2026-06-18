@@ -13,27 +13,27 @@ export default function HomeView({ reviews, setView }: HomeViewProps) {
     {
       name: 'SPECIAL SAOJI BAG',
       tagline: 'Warm potli pouch with rich spiced Saoji gravy core and cheese blend.',
-      image: '/src/assets/images/veg_saoji_bag_1781813682604.jpg',
+      image: '/images/veg_saoji_bag_1781813682604.jpg',
     },
     {
       name: 'MASTI ACHARI BAG',
       tagline: 'Puffed crispy pastry potlies stuffed with pickled seasonings and soft cheese melt.',
-      image: '/src/assets/images/veg_achari_bag_1781813699434.jpg',
+      image: '/images/veg_achari_bag_1781813699434.jpg',
     },
     {
       name: 'SAOJI PANEER TIKKA',
       tagline: 'Authentic Vidarbha hot pepper marinade on tandoor fire-baked cottage cheese.',
-      image: '/src/assets/images/saoji_paneer_1781813729457.jpg',
+      image: '/images/saoji_paneer_1781813729457.jpg',
     },
     {
       name: 'MALAI CHAAP ROLL',
       tagline: 'Delectable mild-creamy cashew-yogurt marinade grilled soya chaap in thin roll.',
-      image: '/src/assets/images/malai_chaap_roll_1781813758787.jpg',
+      image: '/images/malai_chaap_roll_1781813758787.jpg',
     },
     {
       name: 'MAKHANI MOMOS',
       tagline: 'Smoked veggie dumplings coated in silken buttery rich tomato cream gravy.',
-      image: '/src/assets/images/makhani_momos_1781813790131.jpg',
+      image: '/images/makhani_momos_1781813790131.jpg',
     }
   ];
 

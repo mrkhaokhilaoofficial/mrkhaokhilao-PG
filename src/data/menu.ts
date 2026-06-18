@@ -52,7 +52,7 @@ export const INITIAL_MENU: MenuItem[] = [
     name: 'Special Saoji Bag',
     price: 50,
     description: 'Warm potli pouch with spiced Saoji gravy core and cheese blend.',
-    image: '/src/assets/images/veg_saoji_bag_1781813682604.jpg'
+    image: '/images/veg_saoji_bag_1781813682604.jpg'
   },
   {
     id: 'b3',
@@ -60,7 +60,7 @@ export const INITIAL_MENU: MenuItem[] = [
     name: 'Masti Achari Bag',
     price: 50,
     description: 'Puffed potlies stuffed with pickled seasonings and soft cheese melt.',
-    image: '/src/assets/images/veg_achari_bag_1781813699434.jpg'
+    image: '/images/veg_achari_bag_1781813699434.jpg'
   },
 
   // BBQ Paneer
@@ -70,7 +70,7 @@ export const INITIAL_MENU: MenuItem[] = [
     name: 'Classic Paneer Tikka',
     price: 170,
     description: 'Fresh paneer cubes in standard rich tandoori spices, smoked.',
-    image: '/src/assets/images/classic_paneer_tikka_1781812841149.jpg'
+    image: '/images/classic_paneer_tikka_1781812841149.jpg'
   },
   {
     id: 'p2',
@@ -78,7 +78,7 @@ export const INITIAL_MENU: MenuItem[] = [
     name: 'Achaari Paneer Tikka',
     price: 170,
     description: 'Perfect blend of pickling spices and soft skewered paneer.',
-    image: '/src/assets/images/achari_paneer_1781813714523.jpg'
+    image: '/images/achari_paneer_1781813714523.jpg'
   },
   {
     id: 'p3',
@@ -86,7 +86,7 @@ export const INITIAL_MENU: MenuItem[] = [
     name: 'Saoji Paneer Tikka',
     price: 170,
     description: 'Authentic Vidarbha hot pepper marinade on clay-baked cottage cheese.',
-    image: '/src/assets/images/saoji_paneer_1781813729457.jpg',
+    image: '/images/saoji_paneer_1781813729457.jpg',
     isSpicy: true
   },
 
@@ -97,7 +97,7 @@ export const INITIAL_MENU: MenuItem[] = [
     name: 'Saoji Chaap Roll',
     price: 120,
     description: 'Fresh roomali flatbread wrap stuffed with spicy Saoji soya chaap chunks.',
-    image: '/src/assets/images/saoji_chaap_roll_1781813747114.jpg',
+    image: '/images/saoji_chaap_roll_1781813747114.jpg',
     isSpicy: true
   },
   {
@@ -106,7 +106,7 @@ export const INITIAL_MENU: MenuItem[] = [
     name: 'Hariyali Paneer Roll',
     price: 120,
     description: 'Minty-coriander cottage cheese cubes layered with bell peppers in a warm roll.',
-    image: '/src/assets/images/hariyali_paneer_roll_1781812859987.jpg'
+    image: '/images/hariyali_paneer_roll_1781812859987.jpg'
   },
   {
     id: 'r3',
@@ -114,7 +114,7 @@ export const INITIAL_MENU: MenuItem[] = [
     name: 'Malai Chaap Roll',
     price: 130,
     description: 'Delectable mild-creamy cashew yogurt marinade soya wrapped into a roll.',
-    image: '/src/assets/images/malai_chaap_roll_1781813758787.jpg',
+    image: '/images/malai_chaap_roll_1781813758787.jpg',
     isChefSpecial: true
   },
 
@@ -125,7 +125,7 @@ export const INITIAL_MENU: MenuItem[] = [
     name: 'Saoji Momos',
     price: 140,
     description: 'Vegetarian dumplings doused in spicy fiery Vidarbha rub, tandoor grilled.',
-    image: '/src/assets/images/saoji_momos_1781813777290.jpg',
+    image: '/images/saoji_momos_1781813777290.jpg',
     isSpicy: true
   },
   {
@@ -134,7 +134,7 @@ export const INITIAL_MENU: MenuItem[] = [
     name: 'Makhani Momos',
     price: 150,
     description: 'Smoked veggie dumplings coated in silk buttery rich tomato cream gravy.',
-    image: '/src/assets/images/makhani_momos_1781813790131.jpg'
+    image: '/images/makhani_momos_1781813790131.jpg'
   },
 
   // MKK Special Combos
@@ -144,7 +144,7 @@ export const INITIAL_MENU: MenuItem[] = [
     name: 'Paneer Saoji Masala',
     price: 140,
     description: 'Classic spicy Nagpur style gravy with succulent paneer cubes. Served with authentic Laccha Paratha.',
-    image: '/src/assets/images/paneer_saoji_combo_1781812892479.jpg',
+    image: '/images/paneer_saoji_combo_1781812892479.jpg',
     isChefSpecial: true,
     isSpicy: true
   },
@@ -154,7 +154,7 @@ export const INITIAL_MENU: MenuItem[] = [
     name: 'Paneer do Pyaza Combo',
     price: 140,
     description: 'Rich slow-cooked onion rich semi-dry gravy paneer. Served with authentic Laccha Paratha.',
-    image: '/src/assets/images/paneer_pyaza_combo_1781813839457.jpg'
+    image: '/images/paneer_pyaza_combo_1781813839457.jpg'
   },
   {
     id: 'c3',
@@ -162,7 +162,7 @@ export const INITIAL_MENU: MenuItem[] = [
     name: 'Paneer Champaran Combo',
     price: 140,
     description: 'Clay pot cooked rich garlic, robust whole-spiced paneer stew. Served with fresh aromatic Laccha Paratha.',
-    image: '/src/assets/images/paneer_saoji_combo_1781812892479.jpg'
+    image: '/images/paneer_saoji_combo_1781812892479.jpg'
   },
   {
     id: 'c4',
@@ -170,7 +170,7 @@ export const INITIAL_MENU: MenuItem[] = [
     name: 'Shahi Paneer Combo',
     price: 150,
     description: 'Royal luxurious sweet-tinged white cashew cream cottage cheese. Served with hot Laccha Paratha.',
-    image: '/src/assets/images/shahi_paneer_combo_1781813809699.jpg'
+    image: '/images/shahi_paneer_combo_1781813809699.jpg'
   },
   {
     id: 'c5',
@@ -178,7 +178,7 @@ export const INITIAL_MENU: MenuItem[] = [
     name: 'Amritsari Tawa Chaap Combo',
     price: 140,
     description: 'Pan-seared spiced soya chaap chopped with traditional crushed masala. Served with Laccha Paratha.',
-    image: '/src/assets/images/paneer_saoji_combo_1781812892479.jpg'
+    image: '/images/paneer_saoji_combo_1781812892479.jpg'
   },
   {
     id: 'c6',
@@ -186,7 +186,7 @@ export const INITIAL_MENU: MenuItem[] = [
     name: 'Banjara Tawa Chaap Combo',
     price: 140,
     description: 'Roughly ground black pepper, rustic countryside spiced griddle chaap. Served with Laccha Paratha.',
-    image: '/src/assets/images/banjara_tawa_chaap_1781813821548.jpg'
+    image: '/images/banjara_tawa_chaap_1781813821548.jpg'
   },
   {
     id: 'c7',
@@ -194,7 +194,7 @@ export const INITIAL_MENU: MenuItem[] = [
     name: 'Afghani Tawa Chaap Combo',
     price: 150,
     description: 'Yogurt, white pepper & cooked butter doused tawa pan soya chaap. Served with delicate crispy Laccha Paratha.',
-    image: '/src/assets/images/paneer_saoji_combo_1781812892479.jpg'
+    image: '/images/paneer_saoji_combo_1781812892479.jpg'
   }
 ];
 

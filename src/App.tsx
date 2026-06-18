@@ -10,12 +10,12 @@ import ReviewsView from './components/ReviewsView';
 import FranchiseView from './components/FranchiseView';
 
 const BG_IMAGES = [
-  '/src/assets/images/fresh_veggies_1_1781813858718.jpg',
-  '/src/assets/images/veg_tandoor_feast_1781812906145.jpg',
-  '/src/assets/images/fresh_veggies_2_1781813876198.jpg',
-  '/src/assets/images/classic_paneer_tikka_1781812841149.jpg',
-  '/src/assets/images/veg_saoji_bag_1781813682604.jpg',
-  '/src/assets/images/veg_achari_bag_1781813699434.jpg'
+  '/images/fresh_veggies_1_1781813858718.jpg',
+  '/images/veg_tandoor_feast_1781812906145.jpg',
+  '/images/fresh_veggies_2_1781813876198.jpg',
+  '/images/classic_paneer_tikka_1781812841149.jpg',
+  '/images/veg_saoji_bag_1781813682604.jpg',
+  '/images/veg_achari_bag_1781813699434.jpg'
 ];
 
 export default function App() {
@@ -155,4 +155,3 @@ export default function App() {
     </div>
   );
 }
-
