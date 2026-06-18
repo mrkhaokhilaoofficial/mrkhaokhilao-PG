@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-app: #fdfbf7;
+  --bg-card: rgba(255, 255, 255, 0.86);
+  --bg-header: rgba(253, 251, 247, 0.92);
+  --text-primary: #1c1917;
+  --text-secondary: #44403c;
+  --text-muted: #6b6661;
+  --border-color: rgba(120, 113, 108, 0.18);
+  --color-accent-gold: #c28d00;
+  --color-nav-bg: #fdfbf7;
+  --primary-color: #1c1917; /* Dark elegant charcoal for light mode text */
+}
+
+.dark {
+  --bg-app: #0d0d0d;
+  --bg-card: rgba(24, 21, 19, 0.72); /* Glass-like dark background so changing background is visible */
+  --bg-header: rgba(13, 13, 13, 0.88);
+  --text-primary: #f3f3f3;
+  --text-secondary: #e5e5e5;
+  --text-muted: #aeaeae;
+  --border-color: rgba(158, 143, 120, 0.22);
+  --color-accent-gold: #ffb800;
+  --color-nav-bg: #0d0d0d;
+  --primary-color: #ffdca1; /* Soft warm cream-gold for dark mode contrast */
+}
+
+@theme {
+  --font-serif: "Noto Serif", Georgia, serif;
+  --font-sans: "Work Sans", system-ui, sans-serif;
+  
+  --color-primary: var(--primary-color);
+  --color-primary-gold: var(--color-accent-gold);
+  --color-secondary-green: #008444;
+  --color-spicy-red: #e23e1d;
+  --color-neutral-dark: var(--color-nav-bg);
+  --color-on-surface: var(--text-primary);
+  --color-on-surface-variant: var(--text-secondary);
+  --color-text-dimmed: var(--text-muted);
+  --color-bg-site: var(--bg-app);
+  --color-border-site: var(--border-color);
+  
+  /* Animations */
+  --animate-fade-in: fade-in 0.5s ease-out;
+  --animate-slide-up: slide-up 0.4s ease-out;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Custom visual utilities representing elegant dining experience */
+.glass-effect {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+}
+
+.glow-gold:focus {
+  box-shadow: 0 0 15px rgba(255, 184, 0, 0.15);
+  border-bottom-color: var(--color-accent-gold) !important;
+}
+
+.table-selected {
+  background-color: var(--color-accent-gold) !important;
+  color: #131313 !important;
+  box-shadow: 0 0 20px rgba(255, 184, 0, 0.45);
+}
+
+.table-occupied {
+  background-color: rgba(53, 53, 53, 0.4) !important;
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.pure-veg-indicator {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #008444;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  padding: 2px;
+}
+
+.pure-veg-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #008444;
+  border-radius: 50%;
+}

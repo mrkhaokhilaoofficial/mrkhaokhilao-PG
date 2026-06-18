@@ -1,0 +1,6 @@
+{
+  "name": "Mr. Khao Khilao",
+  "description": "Pure Vegetarian Indian Fine Dining by Chef Piyush Gupta. Explore gourmet tandoor specialities, book tables, read/write guest experiences, and submit franchise applications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
