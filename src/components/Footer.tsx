@@ -67,24 +67,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Column 2: New Menu */}
-        <div className="flex flex-col gap-4">
-          <h4 className="font-serif text-lg font-bold text-[#e23e1d] tracking-wide border-b border-white/5 pb-2">New Menu</h4>
-          <ul className="text-sm text-[#e5e5e5] flex flex-col gap-3 font-sans">
-            <li className="flex justify-between hover:text-[#ffb800] transition-colors cursor-pointer">
-              <span>Afghani Chaap Special</span>
-              <span className="text-[#aeaeae]">₹160</span>
-            </li>
-            <li className="flex justify-between hover:text-[#ffb800] transition-colors cursor-pointer">
-              <span>Cheese Chilly Bag</span>
-              <span className="text-[#aeaeae]">₹110</span>
-            </li>
-            <li className="flex justify-between hover:text-[#ffb800] transition-colors cursor-pointer">
-              <span>Makhani Momos</span>
-              <span className="text-[#aeaeae]">₹150</span>
-            </li>
-          </ul>
-        </div> 
+        
 
         {/* Column 3: Contact Us */}
         <div className="flex flex-col gap-4">
