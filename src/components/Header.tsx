@@ -25,7 +25,7 @@ export default function Header({ currentView, setView, isThemeDark, setIsThemeDa
   const navItems = [
     { label: 'Home', value: 'home' as ViewType },
     { label: 'Digital Menu', value: 'menu' as ViewType },
-    { label: 'Table Booking', value: 'booking' as ViewType },
+    // { label: 'Table Booking', value: 'booking' as ViewType },
     { label: 'Franchise', value: 'franchise' as ViewType },
     { label: 'Reviews', value: 'reviews' as ViewType },
   ];
