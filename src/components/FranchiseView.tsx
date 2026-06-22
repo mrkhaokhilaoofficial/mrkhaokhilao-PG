@@ -13,28 +13,47 @@ export default function FranchiseView() {
   const [message, setMessage] = useState('');
   const [inquirySubmitted, setInquirySubmitted] = useState<FranchiseInquiry | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!fullName || !email || !phone || !city) return;
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
-    const data: FranchiseInquiry = {
-      fullName,
-      email,
-      phone,
-      city,
-      investmentRange,
-      experience
-    };
+  if (!fullName || !email || !phone || !city) return;
+
+  const data = {
+    fullName,
+    email,
+    phone,
+    city,
+    investmentRange,
+    experience,
+    message
+  };
+
+  try {
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbzoSyXlD51VfHCRlwETexaNfXYKvZEqGGHE5O2orArFCjpzLCF_XufRlMru_9DeiwdC/exec",
+      {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    );
 
     setInquirySubmitted(data);
 
-    // Reset Inputs
     setFullName('');
     setEmail('');
     setPhone('');
     setCity('');
     setMessage('');
-  };
+
+  } catch (error) {
+    console.error(error);
+    alert("Failed to submit inquiry");
+  }
+};
 
   const criteriaList = [
     {
