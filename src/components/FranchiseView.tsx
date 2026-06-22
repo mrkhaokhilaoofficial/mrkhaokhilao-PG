@@ -44,7 +44,7 @@ export default function FranchiseView() {
     },
     {
       title: 'Standard Investment',
-      desc: 'Investment starts from ₹15 Lakhs to ₹25 Lakhs covering state-of-the-art tandoor equipment, layout decor, and core signages.',
+      desc: 'Investment starts from ₹1.5 Lakhs to ₹25 Lakhs covering state-of-the-art tandoor equipment, layout decor, and core signages.',
       icon: <TrendingUp className="text-primary-gold" size={20} />
     },
     {
