@@ -195,6 +195,9 @@ export default function FranchiseView() {
                     onChange={(e) => setInvestmentRange(e.target.value)}
                     className="bg-surface-container-lowest border border-outline-variant/30 text-xs p-2.5 rounded text-on-surface focus:border-primary-gold focus:outline-none"
                   >
+                    <option value="₹1.5 Lakhs - ₹2 Lakhs">₹1.5L - ₹2 Lakhs</option>
+                    <option value="₹2 Lakhs - ₹5 Lakhs">₹2L - ₹5 Lakhs</option>
+                    <option value="₹5 Lakhs - ₹15 Lakhs">₹5L - ₹15 Lakhs</option>
                     <option value="₹15 Lakhs - ₹25 Lakhs">₹15L - ₹25 Lakhs</option>
                     <option value="₹25 Lakhs - ₹35 Lakhs">₹25L - ₹35 Lakhs</option>
                     <option value="₹35 Lakhs+">₹35 Lakhs +</option>
