@@ -54,20 +54,6 @@ export default function HomeView({ reviews, setView }: HomeViewProps) {
     },
     {
       id: 'f3',
-      city: 'NAGPUR CIVIL LINES',
-      title: 'Gourmet Lounge',
-      desc: '"Experience tandoor cooking live on a bespoke glass charcoal hearth stage, in the energetic heart of Nagpur city."',
-      loc: '📍 Maharashtra, India'
-    },
-    {
-      id: 'f4',
-      city: 'PUNE KOREGAON PARK',
-      title: 'Cozy Bistro',
-      desc: '"A beautiful contemporary space combining authentic traditional Northern Indian tastes with premium green botanical interiors."',
-      loc: '📍 Maharashtra, India'
-    },
-    {
-      id: 'f5',
       city: 'COMING SOON',
       title: 'Your City Next?',
       desc: 'Our expansion team is currently evaluating multiple premium commercial spaces. Apply to bring premium pure vegetarian dining to your city.',
