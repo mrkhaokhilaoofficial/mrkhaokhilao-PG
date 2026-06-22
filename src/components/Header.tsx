@@ -93,12 +93,12 @@ export default function Header({ currentView, setView, isThemeDark, setIsThemeDa
             {isThemeDark ? <Sun size={18} /> : <Moon size={18} />}
           </button>
 
-          <button 
+          {/* <button 
             onClick={() => handleNavClick('booking')}
             className="hidden sm:inline-block bg-primary-gold hover:bg-primary-gold/90 text-neutral-dark text-xs font-semibold px-5 py-2 uppercase tracking-widest transition-all duration-300 active:scale-95 shadow-md shadow-primary-gold/10"
           >
             Book Now
-          </button>
+          </button> */}
 
           {/* Mobile Menu Toggle */}
           <button 
