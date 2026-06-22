@@ -40,14 +40,14 @@ export default function HomeView({ reviews, setView }: HomeViewProps) {
   const franchises = [
     {
       id: 'f1',
-      city: 'GONDIA MAIN ROAD',
+      city: 'GONDIA - Near Gujarati School Road',
       title: 'Flagship Outlet',
-      desc: '"The absolute heart of our culinary journey, serving the community since 2018 with love, smoky charcoal specialties, and traditional hospitality."',
+      desc: '"The absolute heart of our culinary journey, smoky charcoal specialties, and traditional hospitality."',
       loc: '📍 Maharashtra, India'
     },
     {
       id: 'f2',
-      city: 'AGRA HERITAGE',
+      city: 'GONDIA - Near South to Punjab, Sunny medical Road',
       title: 'Premium Outlet',
       desc: '"Bringing the absolute essence of Chef Piyush\'s recipes back to Agra, where his corporate journey began in the prestigious Oberoi Hotel."',
       loc: '📍 Uttar Pradesh, India'
