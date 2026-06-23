@@ -186,10 +186,10 @@ export default function HomeView({ reviews, setView }: HomeViewProps) {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="font-sans text-on-surface-variant max-w-2xl mx-auto italic text-base md:text-lg tracking-normal my-4 leading-relaxed"
           >
-            <h1>
+            <motion.h1>
             Taste se shuruaat... <br />
             <span className="text-primary-gold italic font-medium">Brand tak ka safar.</span> <br />
-            </h1>
+            </motion.h1>
             "Passion, Hardwork, Creativity - Yeh hai hamara Recipe!" Experience the exquisite tandoor expertise of Gondia's celebrated fine dining hearth.
           </motion.p>
 
