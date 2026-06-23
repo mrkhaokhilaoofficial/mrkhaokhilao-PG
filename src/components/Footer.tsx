@@ -20,7 +20,7 @@ export default function Footer() {
               <img 
                 alt="Mr. Khao Khilao Logo" 
                 className="h-12 w-12 object-cover rounded-full border-2 border-[#e23e1d]"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxODjpcYCxWNh61u0J9w8ocOXpWCQwlapSEaBRt9LrG6ODnFb1D-ho9Vt5P3dbJKowAMSar-r8y0dq3v_IEZIjuWziPfjMQQ79Y8NdRf7Y78szZExJlBLS4MDu25xyIRG0TtYwYRHHS7waHwxCZ-j5MKqc9RBEwlHcAtfLNFx3Nmu-HmYEBh8Eaha0TrhGqI_TjbGijEGLwtEFcFrDYdyix06RCxwLAo8GklbQRVBu8JhkNGiWEurXEPIIFVgrMgsl2irh89aY9S_H"
+                src="/images/Mr.%20Khao%20khilao%20logo.png"
               />
               <span className="absolute -bottom-1 -right-1 bg-green-600 w-3.5 h-3.5 rounded-full border-2 border-[#131110] flex items-center justify-center" title="100% Pure Veg">
                 <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
