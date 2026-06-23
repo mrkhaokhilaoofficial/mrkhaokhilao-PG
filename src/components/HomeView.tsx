@@ -175,8 +175,10 @@ export default function HomeView({ reviews, setView }: HomeViewProps) {
             transition={{ duration: 0.7, delay: 0.15 }}
             className="font-serif text-5xl md:text-7xl font-bold text-on-surface tracking-tight leading-none mb-4"
           >
-            Taste se shuruaat... <br />
-            <span className="text-primary-gold italic font-medium">Brand tak ka safar.</span>
+            MR. KHAO KHILAO <br />
+             <span className="text-primary-gold italic font-medium">By. Chef Piyush Gupta</span>
+            {/* Taste se shuruaat... <br />
+            <span className="text-primary-gold italic font-medium">Brand tak ka safar.</span> */}
           </motion.h1>
 
           <motion.p 
@@ -226,7 +228,7 @@ export default function HomeView({ reviews, setView }: HomeViewProps) {
               Chef's Masterpieces
             </span>
             <h2 className="font-serif text-3xl md:text-5xl font-bold tracking-tight text-on-surface mb-4">
-              Today's Special
+              Specials
             </h2>
             <div className="h-0.5 w-16 bg-primary-gold mx-auto mb-4" />
             <p className="text-sm font-sans text-on-surface-variant leading-relaxed">
