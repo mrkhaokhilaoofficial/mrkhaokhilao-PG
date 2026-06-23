@@ -75,20 +75,20 @@ export default function Footer() {
           <div className="text-sm text-[#e5e5e5] flex flex-col gap-4">
             <div className="flex items-start gap-2.5">
               <MapPin size={17} className="text-[#e23e1d] shrink-0 mt-0.5" />
-              <span className="leading-relaxed">Main Road, Gondia,<br />Maharashtra, India</span>
+              <span className="leading-relaxed">Rail Toli, Gondia,<br />Maharashtra, India</span>
             </div>
             <div className="flex items-center gap-2.5">
               <Phone size={16} className="text-[#e23e1d] shrink-0" />
               <span>
-                <a href="tel:+918000589080" className="hover:text-[#ffb800] hover:underline transition-colors">
-                  +91 80005 89080
+                <a href="tel:+919623859978" className="hover:text-[#ffb800] hover:underline transition-colors">
+                  +91-9623859978
                 </a>
               </span>
             </div>
             <div className="flex items-center gap-2.5">
               <Mail size={15} className="text-[#e23e1d] shrink-0" />
-              <a href="mailto:support@mrkhaokhilao.com" className="hover:text-[#ffb800] text-xs hover:underline text-[#aeaeae] transition-colors">
-                support@mrkhaokhilao.com
+              <a href="mailto:khilaokhao1@gmail.com" className="hover:text-[#ffb800] text-xs hover:underline text-[#aeaeae] transition-colors">
+                khilaokhao1@gmail.com
               </a>
             </div>
           </div>
