@@ -187,7 +187,7 @@ export default function HomeView({ reviews, setView }: HomeViewProps) {
             className="font-sans text-on-surface-variant max-w-2xl mx-auto italic text-base md:text-lg tracking-normal my-4 leading-relaxed"
           >
             Taste se shuruaat... <br />
-            <span className="text-primary-gold italic font-medium">Brand tak ka safar.</span>
+            <span className="text-primary-gold italic font-medium">Brand tak ka safar.</span> <br />
             "Passion, Hardwork, Creativity - Yeh hai hamara Recipe!" Experience the exquisite tandoor expertise of Gondia's celebrated fine dining hearth.
           </motion.p>
 
