@@ -339,7 +339,7 @@ export default function HomeView({ reviews, setView }: HomeViewProps) {
             <div className="h-[450px] md:h-[550px] rounded overflow-hidden shadow-2xl relative">
               <img 
                 alt="Chef Piyush Gupta" 
-                src="/images/Mr.%20Khao%20khilao%20logo.png" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnuv27k85NVga_n_lKlEB5r0GDCC1XiJjCn4vmbitraVgLuf51TJ15pLhbssb8zBEiardb1Mw81tJmAsLvzfLl7i3sRlbyJW-9eaSBuzWjvcgFHcRdaSQrMFOOuELiE8c-Z5toGfdCUNSNro9vdo5BCNDYCitFF7GAoKsUeENdKYqlC4YAGOU1zdoeR1rcwdzdwBkdJjI21U-_Cy6RDyaE4mUfcT6I31i9FuugdfLPVtY-4-94zUeWIxtPXdhxAxEefI8RoYjLehxj" 
                 className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-dark/80 via-transparent to-transparent opacity-60" />
