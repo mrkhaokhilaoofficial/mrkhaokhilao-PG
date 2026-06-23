@@ -189,6 +189,8 @@ export default function HomeView({ reviews, setView }: HomeViewProps) {
             <motion.h1>
             Taste se shuruaat...   
             <span className="text-primary-gold italic font-medium">Brand tak ka safar.</span> <br />
+              <br />
+              <br />
             </motion.h1>
             "Passion, Hardwork, Creativity - Yeh hai hamara Recipe!" Experience the exquisite tandoor expertise of Gondia's celebrated fine dining hearth.
           </motion.p>
