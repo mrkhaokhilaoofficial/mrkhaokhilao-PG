@@ -47,7 +47,7 @@ export default function Header({ currentView, setView, isThemeDark, setIsThemeDa
           <img 
             alt="Mr. Khao Khilao Logo" 
             className="h-10 w-10 object-cover rounded-full border border-primary/40 group-hover:scale-105 transition-transform duration-300"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxODjpcYCxWNh61u0J9w8ocOXpWCQwlapSEaBRt9LrG6ODnFb1D-ho9Vt5P3dbJKowAMSar-r8y0dq3v_IEZIjuWziPfjMQQ79Y8NdRf7Y78szZExJlBLS4MDu25xyIRG0TtYwYRHHS7waHwxCZ-j5MKqc9RBEwlHcAtfLNFx3Nmu-HmYEBh8Eaha0TrhGqI_TjbGijEGLwtEFcFrDYdyix06RCxwLAo8GklbQRVBu8JhkNGiWEurXEPIIFVgrMgsl2irh89aY9S_H"
+            src="/images/Mr.%20Khao%20khilao%20logo.png"
           />
           <div className="flex flex-col">
             <span className="font-serif text-lg font-bold text-primary tracking-tight leading-none">
