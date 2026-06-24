@@ -10,19 +10,21 @@ interface ReviewsViewProps {
 
 export default function ReviewsView({ reviews, addReview }: ReviewsViewProps) {
   const [name, setName] = useState('');
-  const [dishName, setDishName] = useState('Afghani Chaap');
+  // const [dishName, setDishName] = useState('Afghani Chaap');
+  const [dishName, setDishName] = useState('');
   const [rating, setRating] = useState(5);
   const [title, setTitle] = useState('');
   const [feedback, setFeedback] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const dishesOptions = [
-    'Afghani Chaap',
-    'Cheese Chilly Bag',
-    'Malai Paneer Tikka',
-    'Saoji Chaap Roll',
-    'Paneer Saoji Masala Combo',
-    'Makhani Momos'
+  // const dishesOptions = [
+  //   'Afghani Chaap',
+  //   'Cheese Chilly Bag',
+  //   'Malai Paneer Tikka',
+  //   'Saoji Chaap Roll',
+  //   'Paneer Saoji Masala Combo',
+  //   'Makhani Momos'
+  
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -53,6 +55,7 @@ export default function ReviewsView({ reviews, addReview }: ReviewsViewProps) {
 
     // Reset Form
     setName('');
+    setDishName('');
     setTitle('');
     setFeedback('');
     setRating(5);
@@ -116,20 +119,21 @@ export default function ReviewsView({ reviews, addReview }: ReviewsViewProps) {
                   />
                 </div>
 
-                {/* Dish Selector */}
+                {/* Dish Experienced */}
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-[10px] font-sans font-bold text-on-surface-variant uppercase tracking-wider">Dish Experienced *</label>
-                  <select
-                    value={dishName}
-                    onChange={(e) => setDishName(e.target.value)}
-                    className="bg-surface-container-lowest border border-outline-variant/30 text-xs p-2 rounded text-on-surface focus:border-primary-gold focus:outline-none"
-                  >
-                    {dishesOptions.map((opt) => (
-                      <option key={opt} value={opt}>{opt}</option>
-                    ))}
-                  </select>
+                  <label className="text-[10px] font-sans font-bold text-on-surface-variant uppercase tracking-wider">
+                  Dish Experienced *
+                  </label>
+                  <input
+                  type="text"
+                  required
+                  maxLength={100}
+                  placeholder="E.g., Afghani Chaap, Paneer Tikka, Makhani Momos"
+                  value={dishName}
+                  onChange={(e) => setDishName(e.target.value)}
+                  className="bg-surface-container-lowest border border-outline-variant/30 text-xs p-2.5 rounded focus:border-primary-gold focus:outline-none"
+                  />
                 </div>
-
                 {/* Rating selection stars */}
                 <div className="flex flex-col gap-2">
                   <label className="text-[10px] font-sans font-bold text-on-surface-variant uppercase tracking-wider">Your Rating *</label>
