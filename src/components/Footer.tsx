@@ -38,7 +38,7 @@ export default function Footer() {
           {/* Social links */}
           <div className="flex gap-3 mt-1">
             <a 
-              href="https://instagram.com/mrkhaokhilao" 
+              href="https://www.instagram.com/mr.khao_khilao?igsh=aHdycnl2NTdkaGp5" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-1.5 rounded bg-white/5 border border-white/10 text-[#aeaeae] hover:text-[#ffb800] hover:border-[#ffb800]/30 transition-all"
@@ -56,7 +56,7 @@ export default function Footer() {
               <Youtube size={15} />
             </a>
             <a 
-              href="https://facebook.com/mrkhaokhilao" 
+              href="https://www.facebook.com/share/18tmGSGnbG/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-1.5 rounded bg-white/5 border border-white/10 text-[#aeaeae] hover:text-blue-400 hover:border-blue-400/30 transition-all"
