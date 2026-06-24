@@ -48,7 +48,23 @@ export default function ReviewsView({ reviews, addReview }: ReviewsViewProps) {
       date: new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }),
       initials
     };
-
+    await fetch(
+    "https://script.google.com/macros/s/AKfycbwsNBBOoYNr0B92vFvN0fqeJuBBlG_5Bhfs3CI7SeKvHwYNVIGKwGSV-ilu6b6JroGm/exec",
+  {
+    method: "POST",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      name,
+      dishName,
+      rating,
+      title,
+      feedback
+    })
+  }
+);
     addReview(newReview);
     setIsSubmitted(true);
 
