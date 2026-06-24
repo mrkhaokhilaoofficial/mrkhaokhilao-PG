@@ -105,109 +105,59 @@ export default function ReviewsView({ reviews, addReview }: ReviewsViewProps) {
               <MessageSquareCode className="text-primary-gold" size={18} />
               <h3 className="font-serif font-bold text-sm text-primary tracking-wide">Write Your Review</h3>
             </div>
+            <div className="text-center">
 
-            {isSubmitted ? (
-              <div className="flex flex-col items-center justify-center text-center py-10">
-                <div className="w-12 h-12 bg-secondary-green/20 text-secondary-green rounded-full flex items-center justify-center mb-4 border border-secondary-green/25 animate-pulse">
-                  <CheckCircle size={22} />
-                </div>
-                <h4 className="font-serif text-lg font-bold text-on-surface mb-1">Sent with Happiness!</h4>
-                <p className="text-xs text-on-surface-variant max-w-xs leading-relaxed">
-                  Chef Piyush Gupta and the Mr. Khao Khilao team value your honest feedback which makes us better everyday.
-                </p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-                
-                {/* Name */}
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-[10px] font-sans font-bold text-on-surface-variant uppercase tracking-wider">Your Name *</label>
-                  <input
-                    type="text"
-                    required
-                    maxLength={35}
-                    placeholder="E.g., Aarav Sharma"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    className="bg-surface-container-lowest border border-outline-variant/30 text-xs p-2.5 rounded focus:border-primary-gold focus:outline-none glow-gold text-on-surface"
-                  />
-                </div>
+  <h3 className="font-serif text-2xl font-bold text-on-surface mb-3">
+    Loved Your Meal?
+  </h3>
 
-                {/* Dish Experienced */}
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-[10px] font-sans font-bold text-on-surface-variant uppercase tracking-wider">
-                  Dish Experienced *
-                  </label>
-                  <input
-                  type="text"
-                  required
-                  maxLength={100}
-                  placeholder="E.g., Afghani Chaap, Paneer Tikka, Makhani Momos"
-                  value={dishName}
-                  onChange={(e) => setDishName(e.target.value)}
-                  className="bg-surface-container-lowest border border-outline-variant/30 text-xs p-2.5 rounded focus:border-primary-gold focus:outline-none"
-                  />
-                </div>
-                {/* Rating selection stars */}
-                <div className="flex flex-col gap-2">
-                  <label className="text-[10px] font-sans font-bold text-on-surface-variant uppercase tracking-wider">Your Rating *</label>
-                  <div className="flex gap-2">
-                    {Array.from({ length: 5 }).map((_, i) => {
-                      const value = i + 1;
-                      return (
-                        <button
-                          key={i}
-                          type="button"
-                          onClick={() => setRating(value)}
-                          className="p-1 hover:scale-110 active:scale-95 transition-transform"
-                        >
-                          <Star
-                            size={20}
-                            fill={value <= rating ? '#ffb800' : 'transparent'}
-                            className={value <= rating ? 'text-[#ffb800]' : 'text-outline-variant/60'}
-                          />
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
+  <p className="text-sm text-on-surface-variant leading-relaxed mb-6">
+    Share your experience with Mr. Khao Khilao on Google Reviews.
+    Your feedback helps us grow and helps other food lovers discover us.
+  </p>
 
-                {/* Title headline */}
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-[10px] font-sans font-bold text-on-surface-variant uppercase tracking-wider">Review Title *</label>
-                  <input
-                    type="text"
-                    required
-                    placeholder="E.g., Phenomenal Taste! / Crispy & Savory"
-                    value={title}
-                    onChange={(e) => setTitle(e.target.value)}
-                    className="bg-surface-container-lowest border border-outline-variant/30 text-xs p-2.5 rounded focus:border-primary-gold focus:outline-none"
-                  />
-                </div>
+  {/* REVIEW FORM DISABLED TEMPORARILY
+      WILL BE RE-ENABLED WHEN BACKEND IS IMPLEMENTED
 
-                {/* Description */}
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-[10px] font-sans font-bold text-on-surface-variant uppercase tracking-wider">Describe your Experience *</label>
-                  <textarea
-                    required
-                    rows={4}
-                    placeholder="Tell us everything about the flavors, tandoor smoke, texture, etc..."
-                    value={feedback}
-                    onChange={(e) => setFeedback(e.target.value)}
-                    className="bg-surface-container-lowest border border-outline-variant/30 text-xs p-2.5 rounded focus:border-primary-gold focus:outline-none resize-none"
-                  />
-                </div>
+  {isSubmitted ? (
+    ...
+  ) : (
+    <form onSubmit={handleSubmit}>
+      ...
+    </form>
+  )}
 
-                <button
-                  type="submit"
-                  className="bg-primary-gold hover:bg-primary-gold/90 text-neutral-dark text-xs font-bold uppercase tracking-widest py-3 mt-2 active:scale-95 transition-all text-center flex items-center justify-center gap-1.5"
-                >
-                  <Sparkles size={14} /> Submit Guest Sentiment
-                </button>
+  */}
 
-              </form>
-            )}
+  <div className="flex justify-center mb-6">
+    <img
+      src="/images/google-review-qr.png"
+      alt="Google Review QR"
+      className="w-64 h-64 bg-white p-3 rounded-lg shadow-lg"
+    />
+  </div>
 
+  <p className="text-xs uppercase tracking-widest text-primary-gold font-semibold mb-4">
+    Scan To Leave A Google Review
+  </p>
+
+  <div className="flex items-center mb-4">
+    <div className="flex-1 border-t border-outline-variant/20"></div>
+    <span className="px-4 text-primary-gold font-bold">OR</span>
+    <div className="flex-1 border-t border-outline-variant/20"></div>
+  </div>
+
+  <a
+    href="PASTE_GOOGLE_REVIEW_LINK_HERE"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center w-full bg-primary-gold hover:bg-primary-gold/90 text-neutral-dark text-sm font-bold uppercase tracking-widest py-3 rounded transition-all duration-300"
+  >
+    Leave A Google Review
+  </a>
+
+</div>
+            
           </div>
         </div>
 
