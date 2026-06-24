@@ -53,16 +53,21 @@ export default function ReviewsView({ reviews, addReview }: ReviewsViewProps) {
   {
     method: "POST",
     mode: "no-cors",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      name,
-      dishName,
-      rating,
-      title,
-      feedback
-    })
+    const formData = new FormData();
+
+    formData.append("name", name);
+    formData.append("dishName", dishName);
+    formData.append("rating", rating.toString());
+    formData.append("title", title);
+    formData.append("feedback", feedback);
+
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbyTZMdWYaTuZLWiasjt3anIQmPeHDGnune72ydYOJR6HE0u5c7VmPsGQ5-2XOOMqqtA/exec",
+      {
+        method: "POST",
+        body: formData
+      }
+    );
   }
 );
     addReview(newReview);
