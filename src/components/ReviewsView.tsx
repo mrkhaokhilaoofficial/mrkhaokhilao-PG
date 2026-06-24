@@ -28,7 +28,7 @@ export default function ReviewsView({ reviews, addReview }: ReviewsViewProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name || !dishname || !title || !feedback) return;
+    if (!name || !dishName || !title || !feedback) return;
 
     // Get initials
     const initials = name
