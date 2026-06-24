@@ -49,7 +49,7 @@ export default function ReviewsView({ reviews, addReview }: ReviewsViewProps) {
       initials
     };
     await fetch(
-    "https://script.google.com/macros/s/AKfycbwsNBBOoYNr0B92vFvN0fqeJuBBlG_5Bhfs3CI7SeKvHwYNVIGKwGSV-ilu6b6JroGm/exec",
+    "https://script.google.com/macros/s/AKfycbyTZMdWYaTuZLWiasjt3anIQmPeHDGnune72ydYOJR6HE0u5c7VmPsGQ5-2XOOMqqtA/exec",
   {
     method: "POST",
     mode: "no-cors",
