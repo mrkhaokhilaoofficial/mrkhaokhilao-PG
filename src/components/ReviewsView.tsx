@@ -26,9 +26,9 @@ export default function ReviewsView({ reviews, addReview }: ReviewsViewProps) {
   //   'Makhani Momos'
   // ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name || !title || !feedback) return;
+    if (!name || !dishname || !title || !feedback) return;
 
     // Get initials
     const initials = name
