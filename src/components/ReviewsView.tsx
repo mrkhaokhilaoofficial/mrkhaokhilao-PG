@@ -60,6 +60,7 @@ export default function ReviewsView({ reviews, addReview }: ReviewsViewProps) {
       "https://script.google.com/macros/s/AKfycbyTZMdWYaTuZLWiasjt3anIQmPeHDGnune72ydYOJR6HE0u5c7VmPsGQ5-2XOOMqqtA/exec",
       {
         method: "POST",
+        mode: "no-cors",
         body: formData
       }
     );
