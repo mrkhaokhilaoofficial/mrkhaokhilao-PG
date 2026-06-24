@@ -176,7 +176,7 @@ export default function HomeView({ reviews, setView }: HomeViewProps) {
             className="font-serif text-5xl md:text-7xl font-bold text-on-surface tracking-tight leading-none mb-4"
           >
             MR. KHAO KHILAO <br />
-             <span className="text-primary-gold italic font-medium">By. Chef Piyush Gupta</span>
+             <span className="text-primary-gold italic font-medium">By Chef Piyush Gupta</span>
             
           </motion.h1>
 
