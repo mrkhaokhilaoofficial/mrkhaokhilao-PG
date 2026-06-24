@@ -98,3 +98,24 @@
   background-color: #008444;
   border-radius: 50%;
 }
+/* Dropdown option styling */
+
+select {
+  background-color: #161312;
+  color: #ffffff;
+}
+
+select option {
+  background-color: #161312;
+  color: #ffffff;
+}
+
+select option:checked {
+  background-color: #ffb800;
+  color: #000000;
+}
+
+select option:hover {
+  background-color: #ffb800;
+  color: #000000;
+}
