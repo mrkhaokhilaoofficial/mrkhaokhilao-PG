@@ -24,8 +24,7 @@ export default function ReviewsView({ reviews, addReview }: ReviewsViewProps) {
   //   'Saoji Chaap Roll',
   //   'Paneer Saoji Masala Combo',
   //   'Makhani Momos'
-  
-  ];
+  // ];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
