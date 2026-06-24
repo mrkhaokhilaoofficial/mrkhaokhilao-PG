@@ -8,7 +8,7 @@ export default function FranchiseView() {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [city, setCity] = useState('');
-  const [investmentRange, setInvestmentRange] = useState('₹15 Lakhs - ₹25 Lakhs');
+  const [investmentRange, setInvestmentRange] = useState('₹2 Lakhs - ₹5 Lakhs');
   const [experience, setExperience] = useState('No prior experience, but passionate');
   const [message, setMessage] = useState('');
   const [inquirySubmitted, setInquirySubmitted] = useState<FranchiseInquiry | null>(null);
