@@ -48,11 +48,6 @@ export default function ReviewsView({ reviews, addReview }: ReviewsViewProps) {
       date: new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }),
       initials
     };
-    await fetch(
-    "https://script.google.com/macros/s/AKfycbyTZMdWYaTuZLWiasjt3anIQmPeHDGnune72ydYOJR6HE0u5c7VmPsGQ5-2XOOMqqtA/exec",
-  {
-    method: "POST",
-    mode: "no-cors",
     const formData = new FormData();
 
     formData.append("name", name);
@@ -68,8 +63,6 @@ export default function ReviewsView({ reviews, addReview }: ReviewsViewProps) {
         body: formData
       }
     );
-  }
-);
     addReview(newReview);
     setIsSubmitted(true);
 
