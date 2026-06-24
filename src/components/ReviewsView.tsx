@@ -148,7 +148,7 @@ export default function ReviewsView({ reviews, addReview }: ReviewsViewProps) {
   </div>
 
   <a
-    href="PASTE_GOOGLE_REVIEW_LINK_HERE"
+    href="https://www.google.co.in/search?utm_medium=noren&utm_source=gbp&utm_campaign=2026&q=Mr.+Khao+Khilao&ludocid=11917895103015112672&lsig=AB86z5Ub_1LmNRluvyR-9JB-EZxL#ebo=0"
     target="_blank"
     rel="noopener noreferrer"
     className="inline-flex items-center justify-center w-full bg-primary-gold hover:bg-primary-gold/90 text-neutral-dark text-sm font-bold uppercase tracking-widest py-3 rounded transition-all duration-300"
