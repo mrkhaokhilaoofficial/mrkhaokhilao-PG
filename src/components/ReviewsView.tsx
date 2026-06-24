@@ -131,7 +131,7 @@ export default function ReviewsView({ reviews, addReview }: ReviewsViewProps) {
 
   <div className="flex justify-center mb-6">
     <img
-      src="/images/google-review-qr.png"
+      src="/images/Mr.KhaoKhilao.png"
       alt="Google Review QR"
       className="w-64 h-64 bg-white p-3 rounded-lg shadow-lg"
     />
