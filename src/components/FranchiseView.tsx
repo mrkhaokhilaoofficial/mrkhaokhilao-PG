@@ -30,7 +30,7 @@ export default function FranchiseView() {
 
   try {
     await fetch(
-      "https://script.google.com/macros/s/AKfycbzoSyXlD51VfHCRlwETexaNfXYKvZEqGGHE5O2orArFCjpzLCF_XufRlMru_9DeiwdC/exec",
+      "https://script.google.com/macros/s/AKfycbwUagX9Hy0DCvJX44Wvula-W28E7uzu7T4VXhXfthf8SF291Of9Tt3Mk-sGuIh-bvtBag/exec",
       {
         method: "POST",
         mode: "no-cors",
